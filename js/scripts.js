@@ -44,8 +44,61 @@ window.addEventListener('DOMContentLoaded', event => {
         }
     };
 
+    // Función para controlar la reproducción del himno
+    window.togglePlay = function() {
+        const audio = document.getElementById('himnoAudio');
+        const btn = document.getElementById('playPauseBtn');
+        const icon = btn.querySelector('i');
+        
+        if (audio.paused) {
+            audio.play();
+            icon.className = 'fas fa-pause';
+            btn.classList.add('playing');
+        } else {
+            audio.pause();
+            icon.className = 'fas fa-play';
+            btn.classList.remove('playing');
+        }
+    };
+
+    // Evento para cuando termina la reproducción del himno
+    document.addEventListener('DOMContentLoaded', function() {
+        const himnoAudio = document.getElementById('himnoAudio');
+        if (himnoAudio) {
+            himnoAudio.addEventListener('ended', function() {
+                const btn = document.getElementById('playPauseBtn');
+                const icon = btn.querySelector('i');
+                icon.className = 'fas fa-play';
+                btn.classList.remove('playing');
+            });
+        }
+    });
+
+
+
     // Shrink the navbar 
     navbarShrink();
+
+    // Control de animación del masthead
+    const masthead = document.querySelector('header.masthead');
+    if (masthead) {
+        window.addEventListener('scroll', () => {
+            const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            
+            if (scrollPercent > 30) {
+                masthead.classList.add('scrolled');
+                
+                if (scrollPercent > 70) {
+                    masthead.classList.add('scrolled-top');
+                } else {
+                    masthead.classList.remove('scrolled-top');
+                }
+            } else {
+                masthead.classList.remove('scrolled');
+                masthead.classList.remove('scrolled-top');
+            }
+        });
+    }
 
     // Shrink the navbar when page is scrolled
     document.addEventListener('scroll', navbarShrink);
