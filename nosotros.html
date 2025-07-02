@@ -54,7 +54,7 @@
                         <li class="nav-item"><a class="nav-link active" href="nosotros.html">Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                         <li class="nav-item ms-3">
-                            <a class="btn btn-primary rounded-3 p-2" href="https://virtualsolutionsec.com/notas2025_vidanueva/index_guamani.php" target="_blank" aria-label="Aula Virtual">
+                            <a class="btn btn-primary rounded-3 p-2" href="https://virtualsolutionsec.com/notas2025_vidanueva/index.php" target="_blank" aria-label="Aula Virtual">
                                 <i class="fas fa-laptop fa-lg"></i>
                             </a>
                         </li>
@@ -132,8 +132,43 @@
                                         <i class="fas fa-music fa-stack-1x fa-inverse"></i>
                                     </span>
                                 </div>
-                                <h4 class="card-title text-center mb-4">Himno del Colegio</h4>
-                                <p class="card-text text-center text-muted fst-italic">Pendiente</p>
+                                <div class="d-flex align-items-center justify-content-center gap-3 mb-4">
+                                    <h4 class="card-title text-center mb-0">Himno del Colegio</h4>
+                                    <button class="btn btn-primary rounded-circle" id="playPauseBtn" onclick="togglePlay()" aria-label="Reproducir/Pausar himno">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                    <a href="../assets/audio/himno-vidanueva.mp3" download class="btn btn-primary rounded-circle" aria-label="Descargar himno">
+                                        <i class="fas fa-download"></i>
+                                    </a>
+                                </div>
+                                <div class="card-text text-center">
+                                    <p>|| Gloria a ti forjador de mis sueños,<br>
+                                    Que eres cuna de fe y esperanza.<br>
+                                    Vida Nueva cantamos con ego,<br>
+                                    a la luz de tu digna grandeza.||</p>
+
+                                    <p class="mt-4">Vida Nueva: semillero de grandes,<br>
+                                    que a tus hijos acoges y enseñas,<br>
+                                    con amor, con esfuerzo y constancia<br>
+                                    modelando personas de bien.</p>
+
+                                    <p class="mt-4">Tus maestros que imfunden valores,<br>
+                                    son senderos de guía y de luz.<br>
+                                    Ciencia técnica, deporte y civismo,<br>
+                                    fortalezas de nuestro plantel.</p>
+
+                                    <p class="mt-4">Oh Colegio, sagrado escenario,<br>
+                                    que inspiras a la juventud,<br>
+                                    tu grandeza radica en tus hijos<br>
+                                    que a la patria siempre servirán.</p>
+                                    
+                                    <p>Gloria a ti forjador de mis sueños,<br>
+                                    Que eres cuna de fe y esperanza.<br>
+                                    Vida Nueva cantamos con ego,<br>
+                                    a la luz de tu digna grandeza.</p>
+                                </div>
+                                <audio id="himnoAudio" src="assets/audio/himno-vidanueva.mp3"></audio>
+                                </script>
                             </div>
                         </div>
                     </div>
@@ -148,14 +183,16 @@
                                 </div>
                                 <h4 class="card-title text-center mb-4">Lema del Colegio</h4>
                                 <blockquote class="blockquote text-center mb-0">
-                                    <p class="mb-2">Por mi colegio,<br>
-                                    Mi fuerza y mi coraje<br>
-                                    Por mi colegio,<br>
-                                    Orgullo de mi patria,<br>
-                                    Vida Nueva,<br>
-                                    Furia de mi corazón, fluye por las venas,<br>
-                                    en mi sangre lo mejor de lo mejor,<br>
-                                    Vida Nueva sí señor</p>
+                                    <p class="mb-2" style="font-size: 28px;"><strong>"¡POR MI COLEGIO!</stron><br></p>
+                                    <p class="mb-2">Mi fuerza y mi coraje<br></p>
+                                    <p class="mb-2" style="font-size: 28px;"><strong>¡POR MI COLEGIO!</strong><br></p>
+                                    <p class="mb-2">Orgullo de mi patria<br></p>
+                                    <p class="mb-2" style="font-size: 32px;"><strong>¡VIDA NUEVA!</strong><br></p>
+                                    <p class="mb-2">Furia de mi corazón.<br>
+                                    En la sangre de mi venas,<br>
+                                    que me infunden mi valor.<br>
+                                    ¡Lo mejor de lo mejor!<br>
+                                    <p class="mb-2" style="font-size: 32px;"><strong>VIDA NUEVA ¡SÍ SEÑOR!"</strong></p>
                                 </blockquote>
                             </div>
                         </div>
