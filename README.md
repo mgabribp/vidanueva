@@ -1,7 +1,7 @@
-# Sitio Web Colegio Técnico Vida Nueva
+# Sitio Web Unidad Educativa Particular Técnica Cristiana "Vida Nueva"
 
 ## Descripción
-Sitio web institucional del Colegio Técnico Vida Nueva, desarrollado con Bootstrap 5 y diseñado para mostrar la oferta académica, servicios y especialidades técnicas de la institución.
+Sitio web institucional de la Unidad Educativa Particular Técnica Cristiana "Vida Nueva", desarrollado con Bootstrap 5 y diseñado para mostrar la oferta académica completa desde educación básica hasta bachillerato técnico, servicios y especialidades técnicas de la institución.
 
 ## Tecnologías Utilizadas
 - HTML5
@@ -30,8 +30,11 @@ Sitio web institucional del Colegio Técnico Vida Nueva, desarrollado con Bootst
    - Galería de especialidades técnicas
 
 2. **Servicios**
-   - Formación académica
-   - Desarrollo integral
+   - Educación Básica (1ro a 7mo)
+   - Básica Superior (8vo a 10mo)
+   - Bachillerato Técnico
+   - Formación académica integral
+   - Desarrollo espiritual y valores
    - Programas especiales
    - Áreas de desarrollo
 

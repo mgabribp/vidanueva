@@ -162,4 +162,47 @@ window.addEventListener('DOMContentLoaded', event => {
             navbarResponsive.classList.toggle('show');
         }
     });
+
+    // Funcionalidad para modales legales
+    const initializeLegalModals = () => {
+        const privacyModal = document.getElementById('privacyModal');
+        const termsModal = document.getElementById('termsModal');
+
+        // Función para resetear scroll al abrir modal
+        const resetModalScroll = (modal) => {
+            const modalBody = modal.querySelector('.modal-body');
+            if (modalBody) {
+                modalBody.scrollTop = 0;
+            }
+        };
+
+        // Event listeners para modales
+        if (privacyModal) {
+            privacyModal.addEventListener('show.bs.modal', () => {
+                resetModalScroll(privacyModal);
+            });
+        }
+
+        if (termsModal) {
+            termsModal.addEventListener('show.bs.modal', () => {
+                resetModalScroll(termsModal);
+            });
+        }
+
+        // Cerrar modal con tecla Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const openModals = document.querySelectorAll('.legal-modal.show');
+                openModals.forEach(modal => {
+                    const modalInstance = bootstrap.Modal.getInstance(modal);
+                    if (modalInstance) {
+                        modalInstance.hide();
+                    }
+                });
+            }
+        });
+    };
+
+    // Inicializar modales legales
+    initializeLegalModals();
 });
