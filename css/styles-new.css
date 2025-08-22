@@ -643,8 +643,9 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  background-image: url("../assets/img/header-bg.jpg");
+  background-image: url("../assets/img/header-bg.webp");
   transition: all 0.5s ease;
+  text-shadow: 0 0 8px #0f5132d3;
 }
 
 
